@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>mutamoOS</title>
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.png">
+    <script src="js/app.js"></script>
+    <script src="js/terminalApp.js"></script>
+</head>
+<body>
+   <div class="container">
+       <div class="grid-container">
+        <div class="header">
+            <img id='cabeca' src="imgs/web-programming.png">
+            <div class="daydate">
+                <h1 id="hoje">22 de junho de 2019   18:00</h1>
+            </div>
+            <div class="righticons">
+                <img id='cabeca' src="imgs/profile.png">
+                <p id="mutano">mutanoOS</p>
+                <img id='cabeca' src="imgs/speaker.png">
+                <img id='cabeca' src="imgs/wifi.png">
+            </div>
+        </div>
+        <div id="desktop" class="meio">
+        </div>
+        <div class='footer'>
+            <div class="esquerda">
+                <img src="imgs/terminalapp.png">
+                <img src="imgs/epicapp.png">
+                <img src="imgs/steamapp.png">
+                <img src="imgs/paladinsapp.png">
+            </div>
+            <div class="meio">
+                <img id='meiok' src="imgs/middlecat.png">
+            </div>
+            <div class="direita">
+                <img src="imgs/premiereapp.png">
+                <img src="imgs/bracketsapp.png">
+                <img src="imgs/sublimeapp.png">
+            </div>
+        </div>
+    </div>
+   </div>
+    <script>
+        let desktop = document.getElementById("desktop")
+        let terminalApp = new Terminal()
+        terminalApp.drawWindow(desktop)
+    </script>
+</body>
+</html>
