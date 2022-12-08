@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    transition: filter 1s ease-in;
+    user-select: none;
+
+}
+.blur {
+      filter: blur(4px);
+      transition: all 1s;
+
+}
+body {
+    background: #cfe0dd;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+    background: red;
+}
+.grid-container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    background: url(imgs/background.png);
+    grid-template-areas: 
+        "header"
+        "middle"
+        "footer";
+    
+    grid-template-rows: 20px 90vh ;
+    
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+/* Começo header */
+.header {
+    grid-area: header;
+    background: black;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 0.1rem;
+
+}
+
+.daydate {
+    position: absolute;
+    left: 0; right: 0;
+    width: 100%;
+    text-align: center;
+}
+/* IDS header */
+#cabeca {
+    height: 17px;
+    cursor: pointer;
+}
+#mutano {
+    color: white;
+}
+#hoje {
+    color: white;
+    font-size: 1rem;
+}
+.righticons {
+    display: flex;
+    
+}
+.righticons img, p {
+    margin-right: 0.5rem;
+}
+
+/* Começo meio */
+.meio {
+    grid-area: middle;
+    position: absolute;
+}
+
+.application {
+    position: absolute;
+    top: 80px;
+    left: 180px;
+}
+/* Parte de cima do terminal */
+.titleBar {
+    color: white;
+    height: 12px;
+    width: 400px;
+    background: rgba(13, 9, 29, 0.88);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: .2rem;
+    cursor: pointer;
+}
+.fecha {
+    height: 8px;
+}
+.fechar {
+    color: white;
+    margin: .2rem;
+}
+/* Parte debaixo do terminal */
+.appBox {
+    height: 300px;
+    width: 400px;
+    background: rgba(0, 0, 0, 0.66);
+}
+.root {
+    color: forestgreen;
+    font-size: 0.7rem;
+    padding: 0.2rem;
+}
+/*Começo footer */
+
+.footer {
+    grid-area: footer;
+    background: rgba(0, 0, 0, 0.15);
+    margin: 0 5rem;
+    padding: 0 1rem;
+    clip-path: polygon(2% 0, 98% 0, 100% 100%, 0% 100%);
+    display: flex;
+    justify-content: space-around;
+
+}
+.footer img {
+    height: 45px;
+    margin: 0 0.2rem;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.footer img:hover {
+    transform: scale(1.05);
+}
+#meiok {
+    box-shadow: 1px 2px 11px rgba(87, 140, 211, 0.14);
+    margin: 0.5rem 0rem 0rem 0rem;
+    border-radius: 60%;
+    transition: all 1s ease-in;
+    filter: invert(9%)
+    
+
+}
+#meiok:hover {
+    box-shadow: 1px 2px 11px rgba(255, 0, 0, 0.51);
+    margin: 0.5rem 0rem 0rem 0rem;
+    border-radius: 50%;
+    filter: invert(100%);
+
+}
+
